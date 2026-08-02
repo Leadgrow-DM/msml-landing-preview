@@ -178,6 +178,39 @@ p:last-child { margin-bottom: 0; }
 .section { padding: 80px 0; }
 .section-sm { padding: 56px 0; }
 
+/* ── FORMULA BAR ── */
+.formula-bar {
+  background: var(--navy-dk);
+  padding: 36px 40px;
+  border-top: 3px solid var(--gold);
+}
+.formula-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.formula-term {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -.02em;
+}
+.formula-op {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 400;
+  color: rgba(255,255,255,.35);
+}
+.formula-result {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: -.02em;
+}
+
 /* ── PROBLEM ── */
 .problem-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
 @media (max-width: 768px) { .problem-cols { grid-template-columns: 1fr; gap: 48px; } }
@@ -431,6 +464,18 @@ footer p { font-size: .75rem; color: #9CA3AF; margin: 0; }
 </div>
 
 
+<!-- ── FORMULA BAR ── -->
+<div class="formula-bar">
+  <div class="formula-inner">
+    <span class="formula-term">Visibility</span>
+    <span class="formula-op">+</span>
+    <span class="formula-term">Credibility</span>
+    <span class="formula-op">=</span>
+    <span class="formula-result">More Clients</span>
+  </div>
+</div>
+
+
 <!-- ── PROBLEM ── -->
 <section class="section">
   <div class="wrap">
@@ -438,40 +483,47 @@ footer p { font-size: .75rem; color: #9CA3AF; margin: 0; }
 
       <div>
         <span class="label">The Problem</span>
-        <h2>You know what you'd say.<br>Getting it out consistently is the problem.</h2>
+        <h2>You've built a real business.<br>The audience part never happened.</h2>
+        <p>It's not one problem. It's four.</p>
         <p>
-          Every time you sit down to create something, you're starting from zero.
-          No workflow. No system for what to record, how to edit it, where it goes next.
-          So you spend two hours on something that should take thirty minutes — and then
-          something else comes up, and the whole thing gets shelved.
-        </p>
-        <p>That's happened more than once.</p>
-        <p>
-          The usual advice is more discipline. Get up earlier. Block the time.
-          Commit to posting every week. <strong>That's not the right advice.</strong>
+          You're not sure what to say — or who you're even saying it to. The expertise
+          is real, but you haven't turned it into a clear position that the right investors
+          and clients would recognize themselves in.
         </p>
         <p>
-          You're running a real business. Discipline isn't what's been missing.
-          What's been missing is infrastructure — a production workflow that takes
-          what's already in your head and turns it into content that reaches people,
-          without you rebuilding the process from scratch every single time.
+          You don't have a list. The business has clients, but there's no audience —
+          no group of people who know your name before they need you.
         </p>
-        <p style="font-family:var(--sans);font-weight:700;color:var(--navy);font-size:1.05rem;margin-top:28px;">
-          That's what September 10 is for.
+        <p>
+          When you do sit down to create something, you're starting from zero every time.
+          No workflow, no system, nothing that runs without you rebuilding it from scratch.
+          So it gets shelved. Again.
+        </p>
+        <p>
+          And the investors and clients who should know you are starting their search
+          somewhere you're not showing up — on Google, YouTube, and the AI engines that
+          are deciding who the credible voices are before anyone opens a browser.
+        </p>
+        <p style="font-weight:700;color:var(--navy);font-size:1.05rem;margin-top:28px;">
+          That's not a motivation problem. That's an infrastructure problem — and it's four layers deep.
         </p>
       </div>
 
       <div class="sidebar-stats">
         <div class="stat-block">
-          <div class="stat-big">18+ months</div>
-          <div class="stat-copy">The average Main Street entrepreneur has been saying "I need to build my media presence" for over a year before they do anything about it.</div>
+          <div class="stat-big">No message</div>
+          <div class="stat-copy">Most Main Street entrepreneurs have never defined who they're talking to or what they uniquely stand for. The expertise is there. The positioning isn't.</div>
         </div>
         <div class="stat-block">
-          <div class="stat-big">Started &amp; stopped</div>
-          <div class="stat-copy">Most have tried. The system — not the motivation — is why it stopped. Every time.</div>
+          <div class="stat-big">No list</div>
+          <div class="stat-copy">A business with clients is not the same as an audience. Without one, every new client is still cold outreach — or luck.</div>
         </div>
         <div class="stat-block">
-          <div class="stat-big">AI search</div>
+          <div class="stat-big">No system</div>
+          <div class="stat-copy">Most have tried and stopped. The system — not the motivation — is why it stopped. Every time.</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-big">Not findable</div>
           <div class="stat-copy">Investors and clients are starting on ChatGPT and Perplexity now. The window to establish authority is open. It won't stay open.</div>
         </div>
       </div>
