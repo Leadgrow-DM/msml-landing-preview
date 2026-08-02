@@ -9,18 +9,15 @@
 <style>
 
 :root {
-  --navy:   #364068;
-  --navy-dk:#222840;
-  --teal:   #226D7A;
-  --cyan:   #22B8D1;
-  --gold:   #E6BF4A;
-  --gold-dk:#C9A336;
-  --light:  #F5F7FA;
+  --navy:   #0F2044;
+  --navy-dk:#081530;
+  --red:    #C0202E;
+  --red-dk: #A01828;
+  --light:  #F4F6F9;
   --muted:  #6B7280;
   --border: #DDE1E9;
   --white:  #FFFFFF;
-  --ink:    #1A1E2E;
-  --serif:  'Plus Jakarta Sans', system-ui, sans-serif;
+  --ink:    #0F2044;
   --sans:   'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
@@ -48,7 +45,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: var(--red);
   margin-bottom: 16px;
 }
 
@@ -64,7 +61,7 @@ p:last-child { margin-bottom: 0; }
 .logo { display: flex; align-items: baseline; gap: 10px; text-decoration: none; }
 .logo-name { font-family: var(--sans); font-weight: 700; font-size: 1rem; color: var(--navy); }
 .logo-div  { width: 1px; height: 14px; background: var(--border); margin: 0 2px; }
-.logo-sub  { font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); }
+.logo-sub  { font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--red); }
 .nav-cta {
   display: inline-flex; align-items: center;
   padding: 10px 22px;
@@ -103,14 +100,14 @@ p:last-child { margin-bottom: 0; }
 }
 .play-btn {
   width: 64px; height: 64px;
-  border: 2px solid var(--gold);
+  border: 2px solid var(--red);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   transition: background .15s;
 }
-.play-btn:hover { background: rgba(230,191,74,.1); }
-.play-btn svg { fill: var(--gold); width: 22px; height: 22px; margin-left: 3px; }
+.play-btn:hover { background: rgba(192,32,46,.15); }
+.play-btn svg { fill: var(--red); width: 22px; height: 22px; margin-left: 3px; }
 .video-ph-label { font-size: .78rem; color: rgba(255,255,255,.35); font-weight: 500; letter-spacing: .04em; text-align: center; padding: 0 32px; }
 .video-ph-note { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: .72rem; color: #92600A; background: #FFF8E1; border: 1px solid #F0D080; border-radius: 3px; padding: 4px 10px; }
 
@@ -120,7 +117,7 @@ p:last-child { margin-bottom: 0; }
 }
 .hero-text-col .label { color: rgba(255,255,255,.4); }
 .hero h1 { color: #ffffff !important; }
-.hero h1 em { font-style: italic; color: var(--gold) !important; display: block; }
+.hero h1 em { font-style: italic; color: var(--red) !important; display: block; }
 .hero-sub {
   margin-top: 24px; margin-bottom: 40px;
   font-size: .98rem;
@@ -130,8 +127,8 @@ p:last-child { margin-bottom: 0; }
 .btn-primary {
   display: inline-flex; align-items: center;
   padding: 16px 32px;
-  background: var(--gold);
-  color: #1A1A1A;
+  background: var(--red);
+  color: #ffffff;
   font-family: var(--sans);
   font-size: .9rem;
   font-weight: 700;
@@ -140,7 +137,7 @@ p:last-child { margin-bottom: 0; }
   transition: background .15s, transform .15s;
   align-self: flex-start;
 }
-.btn-primary:hover { background: var(--gold-dk); transform: translateY(-1px); }
+.btn-primary:hover { background: var(--red-dk); transform: translateY(-1px); }
 .btn-secondary {
   display: inline-flex; align-items: center;
   padding: 16px 32px;
@@ -167,7 +164,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ── DIVIDER BAR ── */
 .divider-bar {
-  background: var(--teal);
+  background: var(--red);
   padding: 18px 40px;
   display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap;
 }
@@ -182,7 +179,7 @@ p:last-child { margin-bottom: 0; }
 .formula-bar {
   background: var(--navy-dk);
   padding: 36px 40px;
-  border-top: 3px solid var(--gold);
+  border-top: 3px solid var(--red);
 }
 .formula-inner {
   max-width: 1120px;
@@ -207,7 +204,7 @@ p:last-child { margin-bottom: 0; }
 .formula-result {
   font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 800;
-  color: var(--gold);
+  color: var(--red);
   letter-spacing: -.02em;
 }
 
@@ -218,7 +215,7 @@ p:last-child { margin-bottom: 0; }
 .sidebar-stats { display: flex; flex-direction: column; gap: 2px; }
 .stat-block {
   padding: 28px 24px;
-  border-left: 3px solid var(--teal);
+  border-left: 3px solid var(--red);
   background: var(--light);
 }
 .stat-block + .stat-block { margin-top: 3px; }
@@ -233,7 +230,7 @@ p:last-child { margin-bottom: 0; }
   display: flex; gap: 20px; align-items: flex-start;
 }
 .why-now-icon { font-size: 1.4rem; margin-top: 2px; flex-shrink: 0; }
-.why-now .label { color: var(--gold); margin-bottom: 8px; }
+.why-now .label { color: var(--red); margin-bottom: 8px; }
 .why-now h3 { color: #fff; font-size: 1rem; margin-bottom: 8px; }
 .why-now p  { color: rgba(255,255,255,.65); font-size: .92rem; margin: 0; }
 
@@ -254,11 +251,11 @@ p:last-child { margin-bottom: 0; }
   padding: 28px 32px;
   background: var(--white);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--teal);
+  border-left: 4px solid var(--red);
   border-radius: 0 4px 4px 0;
 }
 .pipeline-box p { font-size: .96rem; color: #3D4356; }
-.pipeline-name { font-family: var(--sans); font-weight: 700; color: var(--teal); }
+.pipeline-name { font-family: var(--sans); font-weight: 700; color: var(--red); }
 .move-fast { font-family: var(--sans); font-size: 1.3rem; font-weight: 700; color: var(--navy); margin: 24px 0 10px; display: block; }
 .done-line { font-family: var(--sans); font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-top: 24px; display: block; }
 
@@ -287,12 +284,12 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 640px) { .who-grid { grid-template-columns: 1fr; } }
 .who-col { padding: 40px 36px; background: var(--navy-dk); }
 .who-col h3 { font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 24px; }
-.who-col.yes h3 { color: var(--cyan); }
+.who-col.yes h3 { color: var(--red); }
 .who-col.no  h3 { color: rgba(255,255,255,.35); }
 .who-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
 .who-list li { display: flex; gap: 12px; font-size: .92rem; line-height: 1.6; color: rgba(255,255,255,.7); }
 .who-list li span { flex-shrink: 0; margin-top: 2px; }
-.yes-mark { color: var(--cyan); }
+.yes-mark { color: var(--red); }
 .no-mark  { color: rgba(255,255,255,.25); }
 .who-section .label { color: rgba(255,255,255,.4); }
 .who-section h2 { color: #fff; }
@@ -310,7 +307,7 @@ p:last-child { margin-bottom: 0; }
 .about-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .atag {
   font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--teal); background: rgba(34,109,122,.07); border: 1px solid rgba(34,109,122,.2);
+  color: var(--red); background: rgba(192,32,46,.06); border: 1px solid rgba(192,32,46,.2);
   padding: 4px 12px; border-radius: 2px;
 }
 
@@ -344,39 +341,39 @@ p:last-child { margin-bottom: 0; }
 .price-cta {
   display: block; width: 100%;
   padding: 18px 28px;
-  background: var(--gold);
-  color: #1A1A1A;
+  background: var(--red);
+  color: #ffffff;
   font-family: var(--sans); font-size: .92rem; font-weight: 700;
   text-align: center; text-decoration: none; border-radius: 4px;
   transition: background .15s;
   margin-bottom: 12px;
 }
-.price-cta:hover { background: var(--gold-dk); }
+.price-cta:hover { background: var(--red-dk); }
 .deposit-note { font-size: .78rem; color: rgba(255,255,255,.3); text-align: center; }
 
 .price-right { }
 .roi-block {
   padding: 28px 28px;
   border: 1px solid rgba(255,255,255,.1);
-  border-left: 3px solid var(--teal);
+  border-left: 3px solid var(--red);
   border-radius: 0 4px 4px 0;
   margin-bottom: 24px;
 }
 .roi-block p { font-size: .9rem; color: rgba(255,255,255,.65); line-height: 1.7; margin: 0; }
 .includes-list { display: flex; flex-direction: column; gap: 10px; }
 .inc { font-size: .83rem; color: rgba(255,255,255,.5); display: flex; gap: 10px; align-items: flex-start; }
-.inc-dot { color: var(--cyan); flex-shrink: 0; margin-top: 3px; }
+.inc-dot { color: var(--red); flex-shrink: 0; margin-top: 3px; }
 
 /* ── GUARANTEE ── */
 .guarantee-section { padding: 64px 0; }
 .guarantee-inner {
   max-width: 680px; margin: 0 auto;
   border: 1px solid var(--border);
-  border-top: 4px solid var(--teal);
+  border-top: 4px solid var(--red);
   padding: 48px 52px;
   text-align: center;
 }
-.g-label { font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); display: block; margin-bottom: 20px; }
+.g-label { font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--red); display: block; margin-bottom: 20px; }
 .guarantee-inner h3 { font-family: var(--sans); font-size: 1.4rem; color: var(--navy); margin-bottom: 16px; }
 .guarantee-inner p { font-size: .92rem; color: var(--muted); }
 .fine { font-size: .82rem !important; margin-top: 16px; font-style: italic; }
@@ -524,7 +521,7 @@ footer p { font-size: .75rem; color: #9CA3AF; margin: 0; }
         </div>
         <div class="stat-block">
           <div class="stat-big">Not findable</div>
-          <div class="stat-copy">Investors and clients are starting on ChatGPT and Perplexity now. The window to establish authority is open. It won't stay open.</div>
+          <div class="stat-copy">Investors and clients are researching YOU — and your space — on ChatGPT, Claude, and Google before they ever make contact. If you're not there, someone else is.</div>
         </div>
       </div>
 
@@ -533,14 +530,14 @@ footer p { font-size: .75rem; color: #9CA3AF; margin: 0; }
     <div class="why-now">
       <div class="why-now-icon">🔍</div>
       <div>
-        <span class="label" style="color:var(--gold);">Why Now</span>
+        <span class="label" style="color:var(--red);">Why Now</span>
         <h3>The way investors and clients find experts is changing.</h3>
         <p>
-          More of them are starting with AI search — asking ChatGPT or Perplexity who
-          the credible voices are in your space before they ever open a browser. The names
-          that come back are the ones showing up consistently: published, on record,
-          recognized as the authority in their space. If you're not in that picture yet,
-          the gap gets harder to close the longer you wait. The people who move now own the answer.
+          More of them are researching you — and your space — on ChatGPT, Claude, and Google
+          before they ever make contact. The names that come back are the ones showing up
+          consistently: published, on record, recognized as the authority in their space.
+          If you're not in that picture yet, the gap gets harder to close the longer you wait.
+          The people who move now own the answer.
         </p>
       </div>
     </div>
